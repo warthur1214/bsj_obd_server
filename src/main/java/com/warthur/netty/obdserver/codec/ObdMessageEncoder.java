@@ -1,0 +1,17 @@
+package com.warthur.netty.obdserver.codec;
+
+import com.warthur.netty.obdserver.pojo.protocol.Message;
+import io.netty.buffer.ByteBuf;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.handler.codec.ByteToMessageDecoder;
+import io.netty.handler.codec.MessageToByteEncoder;
+
+import java.util.List;
+
+public class ObdMessageEncoder extends MessageToByteEncoder<Message> {
+
+    @Override
+    protected void encode(ChannelHandlerContext ctx, Message msg, ByteBuf out) {
+
+    }
+}
