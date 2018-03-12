@@ -14,7 +14,6 @@ public class GateWayServer {
     private static String connection_protocol;
     private static String netty_server_ip;
     private static int netty_server_port;
-    private static String channelId;
     private static final String CONNECTION_PROTOCOL_KEY = "connection.protocol";
     private static final String NETTY_SERVER_IP_KEY = "netty.server.ip";
     private static final String NETTY_SERVER_PORT_KEY = "netty.server.port";
@@ -38,7 +37,6 @@ public class GateWayServer {
         connection_protocol = prop.getProperty(CONNECTION_PROTOCOL_KEY, "TCP").trim();
         netty_server_ip = prop.getProperty(NETTY_SERVER_IP_KEY, "127.0.0.1").trim();
         netty_server_port = Integer.parseInt(prop.getProperty(NETTY_SERVER_PORT_KEY, "8020").trim());
-        channelId = prop.getProperty("channelId").trim();
         log.info("Server protocal is {}, the ip is {}, the port is {}", connection_protocol, netty_server_ip, netty_server_port);
     }
 }
