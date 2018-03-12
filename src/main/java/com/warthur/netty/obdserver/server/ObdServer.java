@@ -2,7 +2,7 @@ package com.warthur.netty.obdserver.server;
 
 import com.warthur.netty.obdserver.codec.HexMessageDecoder;
 import com.warthur.netty.obdserver.codec.ObdMessageEncoder;
-import com.warthur.netty.obdserver.common.util.Constants;
+import com.warthur.netty.obdserver.common.Constants;
 import com.warthur.netty.obdserver.handler.ObdServerHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.ByteBuf;

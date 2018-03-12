@@ -1,4 +1,4 @@
-package com.warthur.netty.obdserver.common.util;
+package com.warthur.netty.obdserver.common;
 
 public class Constants {
 

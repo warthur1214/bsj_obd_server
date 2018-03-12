@@ -1,6 +1,6 @@
 package com.warthur.netty.obdserver.codec;
 
-import com.warthur.netty.obdserver.common.util.Constants;
+import com.warthur.netty.obdserver.common.Constants;
 import com.warthur.netty.obdserver.pojo.protocol.MsgExtend;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
