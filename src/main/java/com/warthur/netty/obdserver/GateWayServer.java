@@ -36,7 +36,7 @@ public class GateWayServer {
         Properties prop = FileUtils.readPropertiesFile(CONFIG_PATH);
         connection_protocol = prop.getProperty(CONNECTION_PROTOCOL_KEY, "TCP").trim();
         netty_server_ip = prop.getProperty(NETTY_SERVER_IP_KEY, "127.0.0.1").trim();
-        netty_server_port = Integer.parseInt(prop.getProperty(NETTY_SERVER_PORT_KEY, "8020").trim());
+        netty_server_port = Integer.parseInt(prop.getProperty(NETTY_SERVER_PORT_KEY, "8090").trim());
         log.info("Server protocal is {}, the ip is {}, the port is {}", connection_protocol, netty_server_ip, netty_server_port);
     }
 }
